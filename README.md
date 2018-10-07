@@ -57,7 +57,8 @@ error: null
 statusCode: 200
 body: good 1.2.3.4
 ```
-All Responses are explained at the URL above for Google Domains DynDNS API.
+All Responses are explained here https://support.google.com/domains/answer/6147083?hl=en. 
+Scroll to the bottom to find the section "Using the API to update your Dynamic DNS record".
 
 
 ## Cron job in Ubuntu to run this every day at 1am
