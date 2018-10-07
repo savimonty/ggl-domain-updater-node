@@ -22,7 +22,7 @@ function updateGoogleDomains() {
         url: "https://domains.google.com/nic/update",
         form: form
       }, function (error, response, body) {
-        console.log("date: ", new Date());
+        console.log("date: ", new Date().toString());
         console.log('error:', error);
         console.log('statusCode:', response && response.statusCode);
         console.log('body:', body);
