@@ -72,6 +72,11 @@ Edit the crontab
 $ crontab -e # this might ask you to choose an editor if you're using this for the first time
 ```
 
+To edit crontab with a particular user you can specify which user the command should run with
+```
+$ crontab -u <username>
+```
+
 Add a new entry as so
 ```
 0 1 * * * /usr/bin/node <PATH_TO_index.js_FILE>
