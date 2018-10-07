@@ -16,7 +16,7 @@ Clone this repository
 
 CD into the cloned repository
 
-``
+`$ cd ggl-domain-updater-node`
 
 Rename the .env_example to .env
 
@@ -42,5 +42,34 @@ If all works well you should see something like so:
 `
 error: null
 statusCode: 200
-body: good xx.xx.xx.xx
+body: good 1.2.3.4
 `
+All Responses are explained at the URL above for Google Domains DynDNS API.
+
+
+## Cron job in Ubuntu to run this every day at 1am
+
+To get the path for node`
+`
+$ which node
+/usr/bin/node
+`
+
+Edit the crontab
+`
+$ crontab -e # this might ask you to choose an editor if you're using this for the first time
+`
+
+Add a new entry as so
+`
+0 1 * * * /usr/bin/node <PATH_TO_index.js_FILE>
+`
+
+For every 6 hours?
+`
+0 0,6,12,18 * * * /usr/bin/node <PATH_TO_index.js_FILE>
+`
+Save the file. You're good to go.
+
+For more details on using crontab: https://help.ubuntu.com/community/CronHowto
+
