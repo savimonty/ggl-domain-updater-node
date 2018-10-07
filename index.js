@@ -15,7 +15,7 @@ function updateGoogleDomains() {
         hostname: GOOGLE_FQDN
     };
 
-    post({
+    request.post({
         headers: {
             "Authorization": "Basic " + googleDomainAuth,
             'Content-Type': 'application/x-www-form-urlencoded'
