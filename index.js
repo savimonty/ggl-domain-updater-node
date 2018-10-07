@@ -9,7 +9,6 @@ const GOOGLE_FQDN = process.env.GOOGLE_DYNDNS_FQDN;
 const googleDomainAuth = Buffer.from(GOOGLE_DYNDNS_USERNAME + ":" + GOOGLE_DYNDNS_PASSWORD).toString('base64');
 
 function updateGoogleDomains() {
-    console.log(GOOGLE_DYNDNS_USERNAME)
 
     var form = {
         hostname: GOOGLE_FQDN
