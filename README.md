@@ -1,4 +1,5 @@
-# ggl-domain-updater-node
+# Google Domain Updater in NodeJS with instructions for a cron job
+
 Created this simple tool in NodeJS to update my google domain using a cron job.
 
 ## Preperation
