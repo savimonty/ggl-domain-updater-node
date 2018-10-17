@@ -76,7 +76,7 @@ $ crontab -e # this might ask you to choose an editor if you're using this for t
 
 To edit crontab with a particular user you can specify which user the command should run with
 ```
-$ crontab -u <username>
+$ crontab -u <username> -e
 ```
 
 Add a new entry as so
